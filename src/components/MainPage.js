@@ -3,6 +3,9 @@
  import Pic2 from '../img/pic2.jpg';
  import Pic3 from '../img/pic3.jpg';
  import Pic4 from '../img/pic4.jpg';
+
+ import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
+
  
  export const MainPage = () => {
    return (
@@ -31,9 +34,9 @@
        <article className="mp__buttons">
         <button className="leftBtn">Some button text</button>
         <div className="rightBtn__container">
-          <span>{"<--"}</span>
+          <ArrowRightAltIcon className="arrowIcon-flipped flip-x" />
           <span>Some text here</span>
-          <span>{"-->"}</span>
+          <ArrowRightAltIcon className="arrowIcon" />
         </div>
        </article>
      </section>

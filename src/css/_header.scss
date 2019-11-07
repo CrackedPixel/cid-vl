@@ -40,7 +40,13 @@ header {
 
   .header__social {
     display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-around;
     margin-bottom: 2rem;
-    // color: $col-1;
+    
+    .social-icon {
+      font-size: 1.2rem;
+    }
   }
 }

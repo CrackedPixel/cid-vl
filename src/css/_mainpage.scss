@@ -238,6 +238,30 @@
     justify-content: space-between;
     margin-top: 2rem;
 
+    @media #{$phone-s} {
+      width: 100%;
+      justify-content: stretch;
+      flex-flow: column nowrap;
+    }
+
+    @media #{$phone-m} {
+      width: 100%;
+      justify-content: stretch;
+      flex-flow: column nowrap;
+    }
+
+    @media #{$phone-ml} {
+      width: 100%;
+      justify-content: stretch;
+      flex-flow: column nowrap;
+    }
+
+    @media #{$phone-l} {
+      width: 100%;
+      justify-content: stretch;
+      flex-flow: column nowrap;
+    }
+
     .leftBtn {
       background: $col-8;
       color: $col-2;
@@ -246,12 +270,88 @@
       font-size: 1rem;
       text-align: center;
       line-height: 2.5rem;
+
+      @media #{$phone-s} {
+        width: 100%;
+      }
+
+      @media #{$phone-m} {
+        width: 100%;
+      }
+
+      @media #{$phone-ml} {
+        width: 100%;
+      }
+
+      @media #{$phone-l} {
+        width: 100%;
+      }
     }
 
     .rightBtn__container {
       display: flex;
+      flex-flow: row nowrap;
       justify-content: space-between;
       width: 50%;
+      padding: 0 1.5rem;
+
+      @media #{$phone-s} {
+        width: 100%;
+      }
+
+      @media #{$phone-m} {
+        width: 100%;
+      }
+
+      @media #{$phone-ml} {
+        width: 100%;
+        padding: 0 0.5rem;
+      }
+
+      @media #{$phone-l} {
+        margin-top: 0.5rem;
+        width: 100%;
+      }
+
+      span {
+        font-size: 1rem;  
+
+        @media #{$phone-ml} {
+          font-size: 3.5vw;
+        }
+      }
+
+      .arrowIcon {
+        transform: scaleX(4);
+        
+        @media #{$phone-s} {
+          transform: scaleX(2);
+        }
+
+        @media #{$phone-m} {
+          transform: scaleX(2);
+        }
+
+        @media #{$phone-ml} {
+          transform: scaleX(2);
+        }
+      }
+
+      .arrowIcon-flipped {
+        transform: scaleX(-4);
+
+        @media #{$phone-s} {
+          transform: scaleX(-2);
+        }
+
+        @media #{$phone-m} {
+          transform: scaleX(-2);
+        }
+
+        @media #{$phone-ml} {
+          transform: scaleX(-2);
+        }
+      }
     }
   }
 }

@@ -54,7 +54,7 @@ header {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
   background: #36384c;
-  width: 180px;
+  width: 210px;
   height: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -106,7 +106,18 @@ header .header__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-bottom: 2rem;
+}
+
+header .header__social .social-icon {
+  font-size: 1.2rem;
 }
 
 .mainPage {
@@ -122,7 +133,7 @@ header .header__social {
   overflow-x: hidden;
   padding: 2rem 2rem 3rem 4rem;
   background: #efefee;
-  margin-left: 180px;
+  margin-left: 210px;
 }
 
 @media only screen and (max-width: 319px) {
@@ -472,6 +483,58 @@ header .header__social {
   margin-top: 2rem;
 }
 
+@media only screen and (max-width: 319px) {
+  .mainPage .mp__buttons {
+    width: 100%;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .mainPage .mp__buttons {
+    width: 100%;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 550px) {
+  .mainPage .mp__buttons {
+    width: 100%;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 767px) {
+  .mainPage .mp__buttons {
+    width: 100%;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+}
+
 .mainPage .mp__buttons .leftBtn {
   background: #36384c;
   color: #EBDADA;
@@ -482,14 +545,131 @@ header .header__social {
   line-height: 2.5rem;
 }
 
+@media only screen and (max-width: 319px) {
+  .mainPage .mp__buttons .leftBtn {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .mainPage .mp__buttons .leftBtn {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 550px) {
+  .mainPage .mp__buttons .leftBtn {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 767px) {
+  .mainPage .mp__buttons .leftBtn {
+    width: 100%;
+  }
+}
+
 .mainPage .mp__buttons .rightBtn__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 50%;
+  padding: 0 1.5rem;
+}
+
+@media only screen and (max-width: 319px) {
+  .mainPage .mp__buttons .rightBtn__container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .mainPage .mp__buttons .rightBtn__container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 550px) {
+  .mainPage .mp__buttons .rightBtn__container {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 767px) {
+  .mainPage .mp__buttons .rightBtn__container {
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+}
+
+.mainPage .mp__buttons .rightBtn__container span {
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 550px) {
+  .mainPage .mp__buttons .rightBtn__container span {
+    font-size: 3.5vw;
+  }
+}
+
+.mainPage .mp__buttons .rightBtn__container .arrowIcon {
+  -webkit-transform: scaleX(4);
+          transform: scaleX(4);
+}
+
+@media only screen and (max-width: 319px) {
+  .mainPage .mp__buttons .rightBtn__container .arrowIcon {
+    -webkit-transform: scaleX(2);
+            transform: scaleX(2);
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .mainPage .mp__buttons .rightBtn__container .arrowIcon {
+    -webkit-transform: scaleX(2);
+            transform: scaleX(2);
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 550px) {
+  .mainPage .mp__buttons .rightBtn__container .arrowIcon {
+    -webkit-transform: scaleX(2);
+            transform: scaleX(2);
+  }
+}
+
+.mainPage .mp__buttons .rightBtn__container .arrowIcon-flipped {
+  -webkit-transform: scaleX(-4);
+          transform: scaleX(-4);
+}
+
+@media only screen and (max-width: 319px) {
+  .mainPage .mp__buttons .rightBtn__container .arrowIcon-flipped {
+    -webkit-transform: scaleX(-2);
+            transform: scaleX(-2);
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .mainPage .mp__buttons .rightBtn__container .arrowIcon-flipped {
+    -webkit-transform: scaleX(-2);
+            transform: scaleX(-2);
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 550px) {
+  .mainPage .mp__buttons .rightBtn__container .arrowIcon-flipped {
+    -webkit-transform: scaleX(-2);
+            transform: scaleX(-2);
+  }
 }
 
 @media only screen and (max-width: 319px) {
